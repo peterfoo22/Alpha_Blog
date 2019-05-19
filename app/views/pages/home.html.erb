@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.container{
+			display: grid;
+			grid-template-columns: 30% 40% 20%;
+		}
+
+		.items{
+
+			height: 150px;
+ 			width: auto;
+ 			outline: 2px solid black;
+  			background-color: powderblue;
+  			grid-column-start: 1;
+  			grid-column-end: end;
+  			text-align: center;
+  			font-size: 2em;
+
+		}
+
+		.nextItems{
+
+			outline: 2px solid black;
+			height: auto;
+ 			width: auto;
+ 			grid-column-start: 1;
+  			grid-column-end: 3;
+  			margin-top: 10px;
+  			margin-bottom: 10px;
+		}
+
+		.sideItems{
+			outline: 2px solid black;
+			height: auto;
+ 			width: auto;
+ 			grid-column-start: 3;
+  			grid-column-end: end;
+  			color: red;
+  			text-align: center;
+  	
+		}
+
+		 img { 
+                width: 100%; 
+                height: 75%; 
+                object-fit: contain; 
+            } 
+
+	</style>
+
+	<title></title>
+</head>
+<body>
+<div class = "container">
+<div class = 'items'>Alpha Blog - Udemy Rails Project <%= image_tag 'thinkinghomer.png' %></div>
+<div class = 'nextItems' >Some of things that I am still tackling is approval, perfectionism, and trying to be friends with everyone.  I certainly value good friendships and being able to work with everyone in respectful way.  
+
+There is always someone negative around me who seem to look only at the negative qualities.  I have to constantly remind myself that no is completely negative and no is completely positive.  Everyone in the work place has their good qualities and bad qualities.  </div>
+<div class = "sideItems"><%= link_to 'About Me', pages_about_path %></div>
+<div></div>
+<div class = "nextItems"><b>What do you think your main purpose in life?</b>
+
+
+
+When I think about my main purpose in life is the self development or trying to the best human you can be.  Whether that come from physical, mental, emotional, and financial aspects of life.  
+
+
+
+I think my parents always were trying hard to be best but at times were frustrated with each other in terms of what it really meant.  I don't think they were ever truly happy with that what they accomplished and it rubbed off on us children.  </div>
+<div class = "sideItems"><a>Buy My book about Being Alpha</a></div>
+<div></div>
+<div class = "nextItems"><b>What would you like to achieve most?</b>
+
+
+
+I really would like to achieve a sense of financial freedom.  I would love to life life on my own terms make my own money, live where I want to live, do what I want to do everyday.  If I want to play golf everyday so be it.  If I want to go to the gym and play basketball I can.  I don't want to be tied to any job,  work.  I want to create more freedom in my life.  
+
+</div>
+<div class = "sideItems">Places to be find your best life...</div>
+
+
+</div>
+
+
+</body>
+<script type="text/javascript"></script>
+</html>
